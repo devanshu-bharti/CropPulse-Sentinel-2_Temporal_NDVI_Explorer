@@ -48,7 +48,7 @@ CropPulse is an end-to-end geospatial data pipeline and interactive web applicat
 │   ├── cog/                    # Final NDVI Cloud-Optimized GeoTIFFs
 │   ├── scl/                    # Final SCL (Cloud Mask) GeoTIFFs
 │   └── tmp/                    # Checkpoints and intermediate BigTIFFs
-├── RAW data/                   # Place your downloaded Sentinel-2 .zip files here
+├── RAW data/                   # Place your downloaded Sentinel-2 SAFE .zip files here
 ├── processor.py                # Heavy-lifting geospatial data processor
 ├── requirements.txt            # Project dependencies
 └── README.md
