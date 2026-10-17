@@ -37,6 +37,8 @@ CropPulse is an end-to-end geospatial data pipeline and interactive web applicat
 
 ---
 
+
+
 ## 📂 Project Structure
 
 ```text
@@ -52,3 +54,16 @@ CropPulse is an end-to-end geospatial data pipeline and interactive web applicat
 ├── processor.py                # Heavy-lifting geospatial data processor
 ├── requirements.txt            # Project dependencies
 └── README.md
+
+```
+
+---
+
+
+
+## Note: 
+
+  **Why are the `data/cog/` and `data/scl/` folders empty?**
+> A single multi-date Sentinel-2 datacube routinely exceeds 10+ GB in size. To comply with GitHub's file size limits, the generated Cloud-Optimized GeoTIFFs (`.tif` files) are explicitly ignored via `.gitignore`. 
+> 
+> The folders are left empty by design. You must supply your own raw Sentinel-2 `.zip` archives and use the built-in UI data processor to generate the datacubes locally on your machine.
